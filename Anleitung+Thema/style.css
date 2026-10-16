@@ -1,0 +1,176 @@
+* { /* alle Elemente */
+    box-sizing: border-box; /* Größe mit Rahmen */
+}
+
+body { /* ganze Seite */
+    margin: 0; /* kein Außenabstand */
+    background-color: #0d142d; /* Hintergrund */
+    color: rgb(239, 239, 239); /* Textfarbe */
+    font-family: Arial, sans-serif; /* Schrift */
+    line-height: 1.6; /* Zeilenabstand */
+}
+
+
+/* NAVIGATION */
+
+nav.Main { /* Navigation */
+    background-color: #060c21; /* Hintergrund */
+    padding: 15px; /* Innenabstand */
+    text-align: center; /* mittig */
+    border-bottom: 2px solid #1a5a89; /* untere Linie */
+}
+
+nav.Main a { /* Navigationslinks */
+    display: inline-block; /* eigener Bereich */
+    color: #65d9ff; /* Schriftfarbe */
+    text-decoration: none; /* keine Unterstreichung */
+    font-size: 18px; /* Schriftgröße */
+    font-weight: bold; /* fett */
+
+    background-color: #0b1429; /* Hintergrund */
+    border: 1px solid #22587a; /* Rahmen */
+    border-radius: 12px; /* runde Ecken */
+
+    padding: 10px 20px; /* Innenabstand */
+    margin: 5px; /* Außenabstand */
+
+    transition: 0.3s; /* Übergang */
+}
+
+nav.Main a:hover { /* beim Darüberfahren */
+    color: white; /* Schrift weiß */
+    border-color: #65d9ff; /* Rahmen blau */
+    box-shadow: 0 0 20px #2693d3; /* Leuchten */
+}
+
+
+/* HEADER */
+
+header { /* oberer Bereich */
+    text-align: center; /* mittig */
+    padding: 60px 20px; /* Abstand */
+}
+
+header h1 { /* Hauptüberschrift */
+    color: white; /* Schriftfarbe */
+    font-size: 40px; /* Größe */
+
+    text-shadow: /* Leuchteffekt */
+        0 0 10px #269bd3, /* kleiner Glow */
+        0 0 25px #17688d; /* großer Glow */
+}
+
+
+/* HAUPTBEREICH */
+
+main { /* Hauptbereich */
+    width: 85%; /* Breite */
+    max-width: 1000px; /* maximale Breite */
+    margin: auto; /* mittig */
+}
+
+article { /* Inhalt */
+    display: flex; /* Flexbox */
+    flex-direction: column; /* untereinander */
+    gap: 25px; /* Abstand */
+}
+
+
+/* TEXTFELDER */
+
+section { /* Textfelder */
+    background-color: #0b1429; /* Hintergrund */
+
+    border: 1px solid #22587a; /* Rahmen */
+    border-radius: 20px; /* runde Ecken */
+
+    padding: 25px 30px; /* Innenabstand */
+
+    box-shadow: 0 0 20px rgba(30, 150, 220, 0.15); /* Glow */
+}
+
+section:hover { /* beim Darüberfahren */
+    border-color: #4acfff; /* Rahmen heller */
+    box-shadow: 0 0 25px rgba(30, 180, 255, 0.3); /* stärkerer Glow */
+}
+
+
+/* ÜBERSCHRIFTEN */
+
+h2 { /* Überschrift 2 */
+    color: #61d7ff; /* blau */
+    text-shadow: 0 0 10px #17688d; /* Glow */
+}
+
+h3 { /* Überschrift 3 */
+    color: #a5b9ff; /* hellblau */
+    text-shadow: 0 0 10px #4b5eaa; /* Glow */
+}
+
+strong { /* fetter Text */
+    color: #6edcff; /* blau */
+}
+
+
+/* BILDER */
+
+article > a { /* Bild-Link */
+    display: block; /* eigener Bereich */
+
+    width: 100%; /* volle Breite */
+    height: 300px; /* Höhe */
+
+    margin: 10px 0; /* Abstand */
+
+    border: none; /* kein Rahmen */
+    border-radius: 25px; /* runde Ecken */
+
+    background-color: transparent; /* durchsichtig */
+
+    overflow: hidden; /* Inhalt bleibt drin */
+
+    transition: 0.5s; /* Übergang */
+}
+
+article > a img { /* Bild */
+    display: block; /* eigener Bereich */
+
+    width: 100%; /* volle Breite */
+    height: 100%; /* volle Höhe */
+
+    object-fit: cover; /* füllt Bereich */
+
+    border: none; /* kein Rahmen */
+    border-radius: 25px; /* runde Ecken */
+
+    box-shadow: 0 0 25px rgba(50, 180, 255, 0.2); /* Glow */
+
+    transition: 0.5s; /* Übergang */
+}
+
+article > a:hover { /* Bild-Link Hover */
+    transform: scale(1.02); /* leicht größer */
+}
+
+article > a:hover img { /* Bild Hover */
+    transform: scale(1.03); /* Bild größer */
+    box-shadow: 0 0 35px rgba(50, 200, 255, 0.5); /* stärkerer Glow */
+}
+
+
+/* FOOTER */
+
+footer { /* Fußbereich */
+    margin-top: 70px; /* Abstand oben */
+    padding: 25px; /* Innenabstand */
+
+    text-align: center; /* mittig */
+
+    background-color: #050914; /* Hintergrund */
+
+    border-top: 1px solid #173e58; /* obere Linie */
+
+    color: #78909c; /* Textfarbe */
+
+    font-size: 14px; /* Schriftgröße */
+}
